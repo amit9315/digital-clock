@@ -1,0 +1,67 @@
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik Iso', cursive;
+}
+
+/* Tag Selector */
+body {
+  background: black;
+}
+
+p {
+  background: linear-gradient(50deg, #2038b278, #ce1616, #c733c7, #5c5fbf);
+  animation: excess 5s ease infinite;
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: blur(5px);
+  color: transparent;
+  text-align: center;
+  font-size: 250px;
+}
+
+/* Class Selector */
+.time {
+  margin-top: 50px;
+  font-size: 150px;
+}
+
+.superspn {
+  padding: 75px;
+}
+
+/* Id Selector */
+#clock {
+  width: fit-content;
+  margin: auto;
+  font-variant: all-petite-caps;
+  filter: brightness(5);
+  text-align: center;
+  background: linear-gradient(
+    50deg,
+    #2038b2,
+    #ce1616,
+    #4ed01a,
+    #dfec11,
+    #c53ace
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: excess 5s ease infinite;
+  background-size: 200%;
+}
+
+@keyframes excess {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
